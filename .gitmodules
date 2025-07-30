@@ -1,0 +1,6 @@
+[submodule "peba1"]
+	path = peba1
+	url = https://github.com/lab-incert/peba1.git
+[submodule "tfhe"]
+	path = tfhe
+	url = https://github.com/tfhe/tfhe.git
