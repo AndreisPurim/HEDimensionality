@@ -126,10 +126,16 @@ Esse script gera vetores aleatórios de N usuários com M amostras cada, com val
 
 Além disso, o script calcula as distâncias euclidianas esperadas entre os vetores e salva em `comp_{n}_scores.csv` e as taxas FAR/FRR em `comp_{n}_rates.csv`.
 
-Agora, para rodar a versão criptografada da distância euclidiana, execute:
+Agora, para rodar a versão criptografada da distância euclidiana entre dois vetores A e B de tamanho n, execute:
 
 ```
-python3 hedim_run_peba.py output/normal/comp_2_samples.txt 2 11 14
+peba1/build/peba1 output/normal/comp_{n}_samples.txt {n} SAMPLE_ID_A SAMPLE_ID_B
+```
+
+Por exemplo:
+
+```
+peba1/build/peba1 output/normal/comp_2_samples.txt 2 11 14
 ```
 
 Esse exemplo compara os vetores de IDs 11 e 14 com dimensão 2. A saída será algo como:
